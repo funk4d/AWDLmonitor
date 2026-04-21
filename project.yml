@@ -1,0 +1,71 @@
+name: AWDLmonitor
+options:
+  minimumXcodeGenVersion: 2.38.0
+  deploymentTarget:
+    macOS: "13.0"
+settings:
+  base:
+    SWIFT_VERSION: 6.0
+    PRODUCT_BUNDLE_IDENTIFIER: com.awdlmonitor.app
+    MACOSX_DEPLOYMENT_TARGET: "13.0"
+    CODE_SIGN_STYLE: Automatic
+    DEVELOPMENT_TEAM: ""
+    GENERATE_INFOPLIST_FILE: YES
+targets:
+  AWDLmonitor:
+    type: application
+    platform: macOS
+    sources:
+      - path: AWDLmonitor/Sources
+    resources:
+      - path: AWDLmonitor/Resources
+    dependencies:
+      - target: awdlkiller-helper
+    settings:
+      base:
+        PRODUCT_NAME: AWDLmonitor
+        GENERATE_INFOPLIST_FILE: NO
+        INFOPLIST_FILE: AWDLmonitor/Info.plist
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ENABLE_HARDENED_RUNTIME: YES
+    postBuildScripts:
+      - name: Embed Helper
+        basedOnDependencyAnalysis: false
+        script: |
+          set -euo pipefail
+          helper_source="${BUILT_PRODUCTS_DIR}/awdlkiller-helper"
+          helper_destination="${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/awdlkiller-helper"
+          icon_source_dir="${SRCROOT}/AWDLmonitor/Resources/MenuBarIcons"
+          icon_destination_dir="${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MenuBarIcons"
+          app_icon_source="${SRCROOT}/icon/AWDLmonitor.png"
+          app_iconset_dir="${TARGET_TEMP_DIR}/AppIcon.iconset"
+          app_icns_destination="${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AppIcon.icns"
+          info_plist_path="${TARGET_BUILD_DIR}/${INFOPLIST_PATH}"
+          install -m 755 "$helper_source" "$helper_destination"
+          mkdir -p "$icon_destination_dir"
+          cp -R "$icon_source_dir"/. "$icon_destination_dir"/
+          rm -rf "$app_iconset_dir"
+          mkdir -p "$app_iconset_dir"
+          sips -z 16 16 "$app_icon_source" --out "$app_iconset_dir/icon_16x16.png" >/dev/null
+          sips -z 32 32 "$app_icon_source" --out "$app_iconset_dir/icon_16x16@2x.png" >/dev/null
+          sips -z 32 32 "$app_icon_source" --out "$app_iconset_dir/icon_32x32.png" >/dev/null
+          sips -z 64 64 "$app_icon_source" --out "$app_iconset_dir/icon_32x32@2x.png" >/dev/null
+          sips -z 128 128 "$app_icon_source" --out "$app_iconset_dir/icon_128x128.png" >/dev/null
+          sips -z 256 256 "$app_icon_source" --out "$app_iconset_dir/icon_128x128@2x.png" >/dev/null
+          sips -z 256 256 "$app_icon_source" --out "$app_iconset_dir/icon_256x256.png" >/dev/null
+          sips -z 512 512 "$app_icon_source" --out "$app_iconset_dir/icon_256x256@2x.png" >/dev/null
+          sips -z 512 512 "$app_icon_source" --out "$app_iconset_dir/icon_512x512.png" >/dev/null
+          cp "$app_icon_source" "$app_iconset_dir/icon_512x512@2x.png"
+          iconutil -c icns "$app_iconset_dir" -o "$app_icns_destination"
+
+  awdlkiller-helper:
+    type: tool
+    platform: macOS
+    sources:
+      - path: awdlkiller-main/awdlkiller.c
+    settings:
+      base:
+        PRODUCT_NAME: awdlkiller-helper
+        PRODUCT_BUNDLE_IDENTIFIER: com.awdlmonitor.awdlkiller-helper
+        CLANG_ENABLE_MODULES: NO
+        GENERATE_INFOPLIST_FILE: YES

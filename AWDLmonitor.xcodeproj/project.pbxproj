@@ -1,0 +1,438 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E06A168E83A70408B5D4942 /* AWDLMonitorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E2F2DC908476434A8329A5 /* AWDLMonitorApp.swift */; };
+		474A714B39B33ADE91B8DAC4 /* awdlkiller-helper in Resources */ = {isa = PBXBuildFile; fileRef = E6CB4D548711325AEA0E8208 /* awdlkiller-helper */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BC354CAFCD8088D86BE7293A /* awdlkiller.c in Sources */ = {isa = PBXBuildFile; fileRef = A660B0069D88066AD6E4876D /* awdlkiller.c */; };
+		FE35C3133BEEA0B6818026DF /* AWDLController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1BBF017D1FED169EB9C0AF /* AWDLController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00E409506F767BF262E278D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6A400DC8C7C859EA1FFDBD35 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B8C9716413ABE4E47370652F;
+			remoteInfo = "awdlkiller-helper";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5A2165ECB57ACC02BB6780A6 /* AWDLmonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AWDLmonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A660B0069D88066AD6E4876D /* awdlkiller.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = awdlkiller.c; sourceTree = "<group>"; };
+		A8E2F2DC908476434A8329A5 /* AWDLMonitorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWDLMonitorApp.swift; sourceTree = "<group>"; };
+		E6CB4D548711325AEA0E8208 /* awdlkiller-helper */ = {isa = PBXFileReference; includeInIndex = 0; path = "awdlkiller-helper"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA1BBF017D1FED169EB9C0AF /* AWDLController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWDLController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		16437BC57DDEA26B2B6CA79F /* awdlkiller-main */ = {
+			isa = PBXGroup;
+			children = (
+				A660B0069D88066AD6E4876D /* awdlkiller.c */,
+			);
+			path = "awdlkiller-main";
+			sourceTree = "<group>";
+		};
+		99B9F476CDB643544AF38870 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E6CB4D548711325AEA0E8208 /* awdlkiller-helper */,
+				5A2165ECB57ACC02BB6780A6 /* AWDLmonitor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D6320D626A7949C58704EF30 = {
+			isa = PBXGroup;
+			children = (
+				16437BC57DDEA26B2B6CA79F /* awdlkiller-main */,
+				E7D960DB52D6C945D7F84434 /* Sources */,
+				99B9F476CDB643544AF38870 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E7D960DB52D6C945D7F84434 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				EA1BBF017D1FED169EB9C0AF /* AWDLController.swift */,
+				A8E2F2DC908476434A8329A5 /* AWDLMonitorApp.swift */,
+			);
+			name = Sources;
+			path = AWDLmonitor/Sources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A223F80BBCEC3731D4C04D55 /* AWDLmonitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D784E2848C56D83C6B8DD19 /* Build configuration list for PBXNativeTarget "AWDLmonitor" */;
+			buildPhases = (
+				BF2B94186850C89558513B35 /* Sources */,
+				2E54D50045C4EA997F6250B5 /* Resources */,
+				9C94F31CD2774F77BC60EA22 /* Embed Helper */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB54FB5BBD0CC0CFF9316B30 /* PBXTargetDependency */,
+			);
+			name = AWDLmonitor;
+			packageProductDependencies = (
+			);
+			productName = AWDLmonitor;
+			productReference = 5A2165ECB57ACC02BB6780A6 /* AWDLmonitor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B8C9716413ABE4E47370652F /* awdlkiller-helper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF22ED25E45FEDF5352EEB45 /* Build configuration list for PBXNativeTarget "awdlkiller-helper" */;
+			buildPhases = (
+				A478B78361CFAE43DE57769E /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "awdlkiller-helper";
+			packageProductDependencies = (
+			);
+			productName = "awdlkiller-helper";
+			productReference = E6CB4D548711325AEA0E8208 /* awdlkiller-helper */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6A400DC8C7C859EA1FFDBD35 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					A223F80BBCEC3731D4C04D55 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+					B8C9716413ABE4E47370652F = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FB81B3B01C8AD316E064E8FB /* Build configuration list for PBXProject "AWDLmonitor" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = D6320D626A7949C58704EF30;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 99B9F476CDB643544AF38870 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A223F80BBCEC3731D4C04D55 /* AWDLmonitor */,
+				B8C9716413ABE4E47370652F /* awdlkiller-helper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2E54D50045C4EA997F6250B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				474A714B39B33ADE91B8DAC4 /* awdlkiller-helper in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9C94F31CD2774F77BC60EA22 /* Embed Helper */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Helper";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -euo pipefail\nhelper_source=\"${BUILT_PRODUCTS_DIR}/awdlkiller-helper\"\nhelper_destination=\"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/awdlkiller-helper\"\nicon_source_dir=\"${SRCROOT}/AWDLmonitor/Resources/MenuBarIcons\"\nicon_destination_dir=\"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MenuBarIcons\"\napp_icon_source=\"${SRCROOT}/icon/AWDLmonitor.png\"\napp_iconset_dir=\"${TARGET_TEMP_DIR}/AppIcon.iconset\"\napp_icns_destination=\"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AppIcon.icns\"\ninfo_plist_path=\"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\ninstall -m 755 \"$helper_source\" \"$helper_destination\"\nmkdir -p \"$icon_destination_dir\"\ncp -R \"$icon_source_dir\"/. \"$icon_destination_dir\"/\nrm -rf \"$app_iconset_dir\"\nmkdir -p \"$app_iconset_dir\"\nsips -z 16 16 \"$app_icon_source\" --out \"$app_iconset_dir/icon_16x16.png\" >/dev/null\nsips -z 32 32 \"$app_icon_source\" --out \"$app_iconset_dir/icon_16x16@2x.png\" >/dev/null\nsips -z 32 32 \"$app_icon_source\" --out \"$app_iconset_dir/icon_32x32.png\" >/dev/null\nsips -z 64 64 \"$app_icon_source\" --out \"$app_iconset_dir/icon_32x32@2x.png\" >/dev/null\nsips -z 128 128 \"$app_icon_source\" --out \"$app_iconset_dir/icon_128x128.png\" >/dev/null\nsips -z 256 256 \"$app_icon_source\" --out \"$app_iconset_dir/icon_128x128@2x.png\" >/dev/null\nsips -z 256 256 \"$app_icon_source\" --out \"$app_iconset_dir/icon_256x256.png\" >/dev/null\nsips -z 512 512 \"$app_icon_source\" --out \"$app_iconset_dir/icon_256x256@2x.png\" >/dev/null\nsips -z 512 512 \"$app_icon_source\" --out \"$app_iconset_dir/icon_512x512.png\" >/dev/null\ncp \"$app_icon_source\" \"$app_iconset_dir/icon_512x512@2x.png\"\niconutil -c icns \"$app_iconset_dir\" -o \"$app_icns_destination\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A478B78361CFAE43DE57769E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC354CAFCD8088D86BE7293A /* awdlkiller.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF2B94186850C89558513B35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE35C3133BEEA0B6818026DF /* AWDLController.swift in Sources */,
+				2E06A168E83A70408B5D4942 /* AWDLMonitorApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CB54FB5BBD0CC0CFF9316B30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B8C9716413ABE4E47370652F /* awdlkiller-helper */;
+			targetProxy = 00E409506F767BF262E278D3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1AE477DC90F945EDB2DAFF48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.awdlmonitor.awdlkiller-helper";
+				PRODUCT_NAME = "awdlkiller-helper";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		2BEBEB15B94701C9C88E9746 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = AWDLmonitor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_NAME = AWDLmonitor;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		331B3E45D9444C54DC519D93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.awdlmonitor.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		408EB123F3D12DC4DF480A5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = AWDLmonitor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_NAME = AWDLmonitor;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5BDF28E046382F4510FEAF81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.awdlmonitor.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		914BA3FEDF0202EC9DB9EC25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.awdlmonitor.awdlkiller-helper";
+				PRODUCT_NAME = "awdlkiller-helper";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4D784E2848C56D83C6B8DD19 /* Build configuration list for PBXNativeTarget "AWDLmonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BEBEB15B94701C9C88E9746 /* Debug */,
+				408EB123F3D12DC4DF480A5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FB81B3B01C8AD316E064E8FB /* Build configuration list for PBXProject "AWDLmonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				331B3E45D9444C54DC519D93 /* Debug */,
+				5BDF28E046382F4510FEAF81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FF22ED25E45FEDF5352EEB45 /* Build configuration list for PBXNativeTarget "awdlkiller-helper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AE477DC90F945EDB2DAFF48 /* Debug */,
+				914BA3FEDF0202EC9DB9EC25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6A400DC8C7C859EA1FFDBD35 /* Project object */;
+}
